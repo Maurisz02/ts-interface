@@ -94,12 +94,21 @@ for (let t of termekek){
 
 
 
-interface Streamable{
+/*interface Streamable{
+
+    cim : string;
+    hossz : number;
+
+}*/
+
+type Streamable = {
 
     cim : string;
     hossz : number;
 
 }
+
+type AlapTipus = number | boolean | string; 
 
 
 let streamableT : Streamable[] = [
