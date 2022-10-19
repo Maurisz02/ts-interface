@@ -54,10 +54,35 @@ class Konyv implements Multimedia{
 
 }
 
+class Film{
+
+    cim : string;
+    hossz : number;
+
+    constructor(cim : string, hossz : number){
+        this.cim = cim;
+        this.hossz = hossz;
+    }
+
+    kiir(): void {
+        console.log(this.toString());
+    }
+
+    toString(): string {
+        return this.cim + " (" + this.hossz + " s)";
+    }
+
+}
+
+let f : Multimedia = new Film('Bingo',420);
+
+
 let termekek : Multimedia[] = [
 
     new Zene('Pappa', 200),
     new Konyv('JamableBee'),
+    new Film('AS',300),
+    f,
 
 ];
 

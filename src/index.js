@@ -42,9 +42,24 @@ class Konyv {
     }
 }
 _Konyv_cim = new WeakMap();
+class Film {
+    constructor(cim, hossz) {
+        this.cim = cim;
+        this.hossz = hossz;
+    }
+    kiir() {
+        console.log(this.toString());
+    }
+    toString() {
+        return this.cim + " (" + this.hossz + " s)";
+    }
+}
+let f = new Film('Bingo', 420);
 let termekek = [
     new Zene('Pappa', 200),
     new Konyv('JamableBee'),
+    new Film('AS', 300),
+    f,
 ];
 for (let t of termekek) {
     t.kiir();
