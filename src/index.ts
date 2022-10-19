@@ -88,7 +88,28 @@ let termekek : Multimedia[] = [
 
 for (let t of termekek){
     t.kiir();
-} 
+}
+
+
+
+
+
+interface Streamable{
+
+    cim : string;
+    hossz : number;
+
+}
+
+
+let streamableT : Streamable[] = [
+
+    new Film('Harry Potter', 2000),
+    new Zene('Houston', 240),
+    {cim : 'Transformers', hossz : 2100},
+    {cim : f.cim , hossz : 12},
+
+];
 
 //let zene = new Zene('Let it go', 183);
 //zene.kiir();
